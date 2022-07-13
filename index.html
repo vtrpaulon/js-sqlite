@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="banco.js"></script>
+    <script src="script.js"></script> 
+  </head>
+
+  <body>
+    <h1>SQLite CRUD</h1>
+    <div>
+      <form class="form">
+        <input type="hidden" id="id" value="[]"/>
+        
+        <div class="box">
+          <label for="name">Nome:</label>
+          <input type="text" id="name"/>
+        </div>
+  
+        <div class="box">
+          <label for="senha">Senha:</label>
+          <input type="text" id="senha"/>        
+        </div>
+        
+        <div class="box">
+          <label for="email">Email:</label>
+          <input type="email" id="email"/>        
+        </div>
+        
+        <button class="btn"><a id="btn-salvar" class="button">Salvar</a></button>
+        
+        <button class="btn"><a id="btn-deletar" class="button" >Deletar</a></button>
+        
+      </form>
+      
+      <table id="table-register">
+        <thead>
+          <th>Nome</th>
+          <th>Senha</th>
+          <th>Email</th>
+        </thead>
+        <tbody id="tbody-resgister">        
+        </tbody>
+      </table>
+    </div>
+  </body>  
+</html>
